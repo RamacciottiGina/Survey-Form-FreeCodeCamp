@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>freecodecamp Survey Form</title>
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Opinion Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the plataform, please complete the next form</p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+        <fieldset>
+            <label id="name-label"> <strong>Name</strong> <input id="name" type="text"  placeholder="Enter your name" required></label>
+            <label id="email-label"> <strong>Email</strong> <input id="email" type="email"  placeholder="Enter your Email" required></label>
+            <label id="number-label"> <strong> Age</strong> (optional) <input id="number" type="number"  placeholder="Age" min="16" max="110"></label>
+        </fieldset>
+        <fieldset>
+            <label> <legend>How did you find out about our platform?</legend>
+                <select id="dropdown" name="howFind">
+                  <option value="">Select an option</option>
+                  <option value="1">Publicity</option>
+                  <option value="2">Social networks</option>
+                  <option value="3">An other student of freeCodeCamp</option>
+                  <option value="4">Prefer not to say</option>
+                  <option value="5">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your level of programming knowledge?</legend>
+            <label for="None">
+                <input type="radio" name="level" id="none" value="none"> None
+            </label>
+            <label for="Low">
+                <input type="radio" name="level" id="low" value="low"> Low
+            </label>
+            <label for="Medium">
+                <input type="radio" name="level" id="medium" value="medium"> Medium</label>
+            <label for="Advanced">
+                <input type="radio" name="level" id="advanced" value="advanced"> Advanced</label>
+        </fieldset>
+        <fieldset>
+            <legend> What would you like to learning? (Check all that apply)</legend>
+            <label for="Front">
+                <input type="checkbox" name="learn" id="Front" value="frontend"> FrontEnd
+            </label>
+            <label for="Back">
+                <input type="checkbox" name="learn" id="Back" value="backend"> BackEnd
+            </label>            
+            <label for="WebFull">
+                <input type="checkbox" name="learn" id=" webFull" value="fullWebProgramming"> Full web programming 
+            </label>
+            <label for="Data">
+                <input type="checkbox" name="learn" id="Data" value="dataScience"> Data Science
+            </label>
+            <label for="Bases">
+                <input type="checkbox" name="learn" id="Bases" value="dataBases"> Data Bases
+            </label>
+            <label for="Security">
+                <input type="checkbox" name="learn" id="Security" value="dataSecurity"> Data Security
+            </label>            
+        </fieldset>
+        <fieldset>
+            <label><legend>Add comments about your experience in freeCodeCamp</legend> 
+                <textarea name="comments" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+            </label>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>

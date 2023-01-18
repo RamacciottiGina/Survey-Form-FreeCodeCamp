@@ -1,0 +1,66 @@
+body {
+    background-image: url(http://www.solofondos.com/wp-content/uploads/2015/11/bg-1.jpg);
+    background-size: 100% 100% ;
+    background-attachment: fixed;
+    font-family:sans-serif;
+    font-size: 16px;
+    color: beige;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif;
+    margin: 1em auto;
+  }
+  p {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 18px;
+    font-style: italic;
+    }
+  legend {
+    font-weight: bold;
+    
+  }
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    border: none;
+    }
+     
+  fieldset {
+    border: none;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 15px;
+  }
+  
+  input,textarea,select {
+    margin: 10px 0 0 0;
+    background-color: #211f24;
+    border: 1px solid #c1c1d1;
+    color: #ffffff;
+  }
+  button[type="submit"] {
+    font-size: 1.1rem;
+    background-color: whitesmoke;
+    border-color: white;
+    min-width: 10px;
+    margin-left: 150px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  ::placeholder {
+    color: white; 
+  }
+  textarea {
+    width: 84%;
+    min-height: 2em;
+  }
