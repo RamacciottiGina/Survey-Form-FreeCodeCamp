@@ -37,7 +37,7 @@ body {
     border: none;
   }
 
-  label {
+  label{
     display: block;
     margin: 0.5rem 0;
     font-size: 15px;
@@ -63,4 +63,13 @@ body {
   textarea {
     width: 84%;
     min-height: 2em;
+  }
+
+  @media screen and (max-width:767px) {
+    #description, #title {
+      display: flexbox;
+      width: 300px;
+      margin-left: 80px;
+    }
+    
   }
